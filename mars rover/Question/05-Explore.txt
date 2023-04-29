@@ -1,0 +1,12 @@
+Let  the rover explore the planetʻs surface. The task 
+is to reach a certain posi7on described by a targetX
+and targetY rela7ve to your star7ng posi7on (e.g. to 
+take a sediment sample). 
+You already reached the goal (red posi7on) when 
+your rover is close enough to the goal.  
+Once you connect to the Rover Simulator with your 
+client (with map, username and contestId) you 
+receive the rovers constraints (wheelBase and 
+maxSteeringAngle) as well as the goal posi7on 
+(targetX and targetY) and the targetRadius (like in 
+level 4)
