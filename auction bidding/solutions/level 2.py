@@ -102,6 +102,6 @@ def main(bid_list):
                 bidder=highest_bidder.replace(bidder,highest_bidder)            
     return bidder,price
 
-inputValue='''100,A,100,A,115,A,119,A,144,A,145,A,157,A,158,A,171,A,179,A,194,A,206,A,207,A,227,A,229,A,231,A,234'''
+inputValue='''100,C,100,C,115,C,119,C,121,C,144,C,154,C,157,G,158,C,171,C,179,C,194,C,206,C,214,C,227,C,229,C,231,C,298'''
 result=main(inputValue)
 print(result[0] +','+result[1])
