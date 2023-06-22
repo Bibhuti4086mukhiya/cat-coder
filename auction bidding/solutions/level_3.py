@@ -20,6 +20,7 @@ def main(bid_list):
     bidder=''
     buyer=[]
     result=[]
+    once='zero'
     if len(bid_list)==2:
         if bidder=='':
             result+=['-']
@@ -88,6 +89,19 @@ def main(bid_list):
                 result+=[bidder]
                 result+=[price]
 
+            
+            if bidder1==bidder2 and bidder1==bidder and bidder2==bidder and once=='once':
+                continue
+
+            elif bidder1==bidder2 and bidder1==bidder and bidder2==bidder:
+                price=price.replace(price,str(int(bid1)+int(bid)))
+                bidder=bidder.replace(bidder,bidder1)
+                once='once'
+                once=once.replace(once,once)
+                result+=[bidder]
+                result+=[price]
+
+            
             if bid1==bid2:
                 highest_bid=highest_bid
                 price=price.replace(price,str(int(highest_bid)))
