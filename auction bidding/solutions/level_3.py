@@ -21,6 +21,7 @@ def main(bid_list):
     buyer=[]
     result=[]
     once='zero'
+    twice='zero'
     if len(bid_list)==2:
         if bidder=='':
             result+=['-']
@@ -63,18 +64,21 @@ def main(bid_list):
                 highest_bid=bid1
                 highest_bidder=bidder.replace(bidder,bidder1)
 
-
             if bid1>bid and first_bid==1:
                 first_bid=0
                 price=price.replace(price,str(int(open_bid)))
                 bidder=bidder.replace(bidder,bidder1)
                 result+=[bidder]
                 result+=[price]
+                if bidder1==bidder2 and bidder1==bidder and bidder2==bidder:
+                    twice='two'
+
+            if bidder1==bidder2 and bidder1==bidder and bidder2==bidder and twice=='two':
+                continue
 
             if bidder1==bidder2 and bidder1==bidder and bidder2==bidder and once=='once':
                 once='zero'
                 continue
-
 
             if bidder1==bidder2 and bidder1==bidder and bidder2==bidder:
                 price=price.replace(price,str(int(bid1)+int(bid)))
@@ -83,13 +87,13 @@ def main(bid_list):
                 result+=[bidder]
                 result+=[price]
 
-
             if bid1<bid2 and highest_bid<bid2 and bidder1!=bidder2:
                 price=price.replace(price,str(int(highest_bid)+int(bid)))
                 bidder=bidder.replace(bidder,bidder2)
                 result+=[bidder]
                 result+=[price]
                 once='once'
+                twice='two'
 
             if highest_bid>bid2:
                 price=price.replace(price,str(int(bid2)+int(bid)))
@@ -103,14 +107,11 @@ def main(bid_list):
                 highest_bid=bid2
                 highest_bidder=bidder.replace(bidder,bidder2)
 
-
-
             if bid1<bid2 and bid2!=highest_bid and bidder1!=bidder2:
                 price=price.replace(price,str(int(bid1)+int(bid)))
                 bidder=bidder.replace(bidder,bidder2)
                 result+=[bidder]
                 result+=[price]
-
 
             if highest_bid1<bid2 and bidder1==bidder2 and bidder1!=bidder:
                 highest_bid=highest_bid1
@@ -131,7 +132,6 @@ def main(bid_list):
                 bidder=bidder.replace(bidder,bidder1)
                 result+=[bidder]
                 result+=[price]
-                
     return result
 
 inputValue='''1,rx,50,aa,2000,de,3558,einseins,3999,ek,4999,yd,8332,lb,5000,lb,6000,lb,7000,lb,8000,lb,8999,yd,9999,zn,11000,ir,11110,nr,12999,kt,12567,kt,12667,kt,13000,go,14000,ym,14999,hm,15400,nr,15690,nr,17000,td,18500,kt,18750,uy,18850,hr,18999,td,19049,st,19200'''
