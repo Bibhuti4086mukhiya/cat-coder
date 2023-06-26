@@ -76,7 +76,6 @@ def main(bid_list):
                 if int(fix_price)<=int(price) and int(fix_price)!=0:
                     result+=[bidder]
                     result+=[int(fix_price)]
-                    break
                 else:
                     result+=[bidder]
                     result+=[price]
@@ -98,7 +97,6 @@ def main(bid_list):
                 if int(fix_price)<=int(price) and int(fix_price)!=0:
                     result+=[bidder]
                     result+=[int(fix_price)]
-                    break
                 else:
                     result+=[bidder]
                     result+=[price]
@@ -109,7 +107,6 @@ def main(bid_list):
                 if int(fix_price)<=int(price) and int(fix_price)!=0:
                     result+=[bidder]
                     result+=[int(fix_price)]
-                    break
                 else:
                     result+=[bidder]
                     result+=[price]
@@ -139,7 +136,6 @@ def main(bid_list):
                 if int(fix_price)>=int(price) and int(fix_price)!=0:
                     result+=[bidder]
                     result+=[int(fix_price)]
-                    break
                 else:
                     result+=[bidder]
                     result+=[price]
@@ -151,7 +147,6 @@ def main(bid_list):
                 if int(fix_price)<=int(price) and int(fix_price)!=0:
                     result+=[bidder]
                     result+=[int(fix_price)]
-                    break
                 else:
                     result+=[bidder]
                     result+=[price]
@@ -163,7 +158,6 @@ def main(bid_list):
                 if int(fix_price)<=int(price) and int(fix_price)!=0:
                     result+=[bidder]
                     result+=[int(fix_price)]
-                    break
                 else:
                     result+=[bidder]
                     result+=[price]
@@ -174,7 +168,6 @@ def main(bid_list):
                 if int(fix_price)>=int(price) and int(fix_price)!=0:
                     result+=[bidder]
                     result+=[int(fix_price)]
-                    break
                 else:
                     result+=[bidder]
                     result+=[price]
