@@ -21,7 +21,7 @@ def trueAndFalse(bidder_list):
     return p
 
 def variableReplacebid():
-
+        pass
 
 def bid1IsSmallerThanBid2AndBidder1IsNotEqualToBidder2(bidder,bid,highest_bidder,highest_bid,bidder2,bid1,bid2,first_bid):
     bid=bid.replace(bid,str(int(bid1)+int(first_bid)))
